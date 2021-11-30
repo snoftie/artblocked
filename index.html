@@ -1,0 +1,245 @@
+<style>
+  :root {
+    --bg-color: #FFF3F2;
+    --accent-color: #A6A5E3;
+    --font-color1: #505181;
+    --font-color2: #FFFFFF;
+    --other-color: #EBF2FF;
+  }
+
+  p {
+    width: 600px;
+    margin: 0 auto;
+    font-family: monospace;
+    letter-spacing: 2px;
+  }
+
+
+  body {
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+  }
+
+  .header {
+    position: absolute;
+    width: 2000px;
+    max-width: 100%;
+    height: 100px;
+    background-color: var(--font-color1);
+
+  }
+
+  .header p {
+    font-size: 1rem;
+    position: absolute;
+    color: var(--bg-color);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    top: 10%;
+    text-align: center;
+  }
+
+  .about {
+    text-align: center;
+    position: absolute;
+    width: 2000px;
+    max-width: 100%;
+    height: 100px;
+    top: 20%;
+    background-color: var(--bg-color);
+  }
+
+  .about p {
+    letter-spacing: 2px;
+    color: var(--font-color1);
+  }
+
+  .scroller {
+    position: relative;
+    width: 2000px;
+    max-width: 100%;
+    height: 30px;
+    top: 13%;
+    background-color: var(--accent-color);
+    overflow: hidden;
+
+  }
+
+  .scroller p {
+
+    position: absolute;
+    color: var(--font-color2);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    bottom: 20%;
+    line-height: 50px;
+    text-align: center;
+    /* Starting position */
+    transform: translateX(100%);
+    /* Apply animation to this element */
+    animation: scroll-left 15s linear infinite;
+  }
+
+  /* Move it (define the animation) */
+  @-moz-keyframes scroll-left {
+    0% {
+      -moz-transform: translateX(100%);
+    }
+
+    100% {
+      -moz-transform: translateX(-100%);
+    }
+  }
+
+  @-webkit-keyframes scroll-left {
+    0% {
+      -webkit-transform: translateX(100%);
+    }
+
+    100% {
+      -webkit-transform: translateX(-100%);
+    }
+  }
+
+  @keyframes scroll-left {
+    0% {
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+
+    100% {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+
+
+  }
+
+  .artists {
+    position: absolute;
+    top: 70%;
+    width: 2000px;
+    max-width: 100%;
+    height: 100px;
+    background-color: var(--bg-color);
+
+
+  }
+
+  .artists p {
+    font-size: large;
+    text-align: center;
+    top: 10%;
+    color: var(--font-color1);
+
+
+  }
+
+  .panels {
+    position: absolute;
+    top: 75%;
+    width: 2000px;
+    max-width: 100%;
+    height: 2050px;
+    background-color: var(--font-color1);
+  }
+
+  .panels p {
+    top: 10%;
+    color: var(--bg-color);
+
+  }
+
+  .panels a {
+    color: var(--bg-color);
+  }
+
+  .work {
+    position: absolute;
+    top: 300%;
+    width: 2000px;
+    max-width: 100%;
+    height: 800px;
+    background-color: var(--font-color2);
+
+  }
+
+  .work p {
+    color: var(--font-color1);
+  }
+</style>
+<div class="header">
+  <p>art blocked @_@
+
+  </p>
+</div>
+<div class="scroller">
+  <p>art block sucks :c </p>
+</div>
+<div class="about">
+  <p>
+
+
+    about: i scroll through pinterest often to try to get art inspo. but oftentimes i am mindlessly scrolling and end up coming up with a mass of images i can't process. the purpose of this digital garden is to organize inspirations so i know what things to focus on in my own work and hopefully overcome some pretty major art block
+    <br>
+    <br>
+    <img src="ar.png" alt="artinspopin">
+    <br>
+    <br>
+    (case in point my "art inspo" pin collection)</p>
+
+</div>
+<div class="artists">
+  <p>
+    things that are inspiring me...
+  </p>
+</div>
+
+<div class="panels">
+  <p>
+    <br>
+    - splitting pieces into comic panels:
+    <br><br>
+    <img src="img111.jpg" alt="MilsaeKim">
+    <br>
+    <a target="_blank" href="https://twitter.com/milsaekim">by milsaekim</a>
+    <br>
+    <br>
+    <img src="img22.jpg" alt="haranikala">
+    <br>
+    <a target="_blank" href="https://twitter.com/haranikala">by haranikala</a>
+    <br>
+    <br>
+    <br>
+    <br>
+    - moons, stars, wings:
+    <br>
+    <br>
+
+    <img src="imggg.png" alt="meyoco">
+    <br>
+    <br>
+    <a target="_blank" href="https://twitter.com/meyoco_">by meyoco</a></p>
+</div>
+<div class="work">
+  <p>
+    wips.
+    <br>
+    <br>
+    <img src="moon.png" alt="wip art">
+
+    <br>
+    <br>
+    <br>
+
+    finished work.
+    <br>
+    <br>
+    tba</p>
+</div>
